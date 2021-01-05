@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobapplication.pt_game.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关卡"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+
+    <mobapplication.pt_game.GamePintuLayout
+        android:id="@+id/game_pintu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_centerInParent="true" />
+    <Button
+        android:id="@+id/btn_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看原图"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/time_bg"/>
+    <RelativeLayout
+        android:id="@+id/game_Time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/game_pintu"
+        android:layout_margin="3dp">
+        <TextView
+            android:id="@+id/id_level"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_alignParentStart="true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#EA7821"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/time_bg"
+            android:text="1"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_alignParentEnd="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/time_bg"
+            android:text="120"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
