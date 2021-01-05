@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Pt_Game</string>
+    <string name="btn_hint_icon">查看原图</string>
+    <string name="text_time">时间</string>
+    <string name="text_checkpoint">关卡</string>
 </resources>
